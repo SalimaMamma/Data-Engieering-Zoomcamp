@@ -5,67 +5,15 @@ user:
       keyfile_json:
         auth_provider_x509_cert_url: https://www.googleapis.com/oauth2/v1/certs
         auth_uri: https://accounts.google.com/o/oauth2/auth
-        client_email: salimamamma@zoomcamp-taxi.iam.gserviceaccount.com
-        client_id: '114843506309741629868'
-        client_x509_cert_url: https://www.googleapis.com/robot/v1/metadata/x509/salimamamma%40zoomcamp-taxi.iam.gserviceaccount.com
-        private_key: '-----BEGIN PRIVATE KEY-----
-
-          MIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDjXQcq401vapDm
-
-          SW1iTPuNZ4sI77bPMToh+d0MIWG7hysy4/tIZ6m9UPtHUfJovEHt/+eHVQMTSCCF
-
-          QIdP60phM2wO32a8gYLo8KHPAB1RTgiEZl28+tbdLXaYRnGxmjzEqAnuf6lNztQi
-
-          U+3FeZY6zIt7P0YxlnDnop1dELfJEYDctBeMqrhFtUKFshUezG4OH2+cuaR5Td7a
-
-          MfQ3Zp5YnxLb+hyLSjA1Pz+I+E3KiaXJkiihqALrQZGXnTrQhxuVkhLvyLr52svF
-
-          hs1pTFWAtOqT19j6lu+pC3mGX2vOjv9PxA8BZvpqVonN/GnoyqD164avHwscAt8p
-
-          RfFC5g4hAgMBAAECggEANCpJdTUetKP6J+QL9URdaOWrWDsLsgEE6fu2lExqbIjI
-
-          SA5XvpaOMtIMPSJXoGElLVKMEBhYsslXMMuL4DHHaILQVZ87Jp/+ZaykK2bG0zs4
-
-          qAwGkM/qkWeXcLuk5U9ShvpZAQAIW8JLGK8x/B938PiyPe5YEBOIxxSfz1UBHd/3
-
-          +KiRaJ38Da9sxPQRow1B/Qnu/mr9bau0cQ4qZgG9QSQ/45n5tng6oMYYk54KCasj
-
-          HmCvAr0Tl+U8hI+K8BdzqGc7H1UU9W+PAaJZvIgmNsKtCRMz7HR70r87AYiqNitL
-
-          cZ81vbHwQwuttFkpe4P+E4tWFH4ECQDBjKiiAJF62QKBgQD27IxoO5yzKqke6LU2
-
-          id5lr1Ee4Mlw+s6HH1SwLHCVwR76bGwM9zgosTBzhG+SaJtVcYeY4xfHGHruTIxK
-
-          u/ye/xXErJOVy80rBT2AmFbBi/EUePzMonYC+6rbfkFCDO7ss3WpeOvQkjdaTfZs
-
-          RS3WW6+G8Z+v+gPGiJENRa5bHQKBgQDruGwXUhYsEKU2vBHx9oMC6KBl0oohArAI
-
-          cGCH+qYHC2ZNO8rAH182LGh2gTvGdmI+CHOeHXGOm+o9Np4phWc0xPMH4Q26EuXO
-
-          kBCVKsCZiI3wG0+wKrt97sMNjRCkEYh7eG5y7wEInHmTqLunKAkCwnU+hhH35p/f
-
-          hsyymHIL1QKBgFE1hxAY2vaKB0klG8QuH7itqi5Pm7DOq/IAueefFgAKndeapQa2
-
-          n/+yFs9HNTKfuManKgN8XKucP4H0JwfFP9ZC6rPeVkOj3XxSouGSOKY7EjS7fdkH
-
-          bWyZvJ2nrmq8ui+a7g2ouVXFYPMQRQVi0yp2yQnGmdBUl71J2PrWeft5AoGBAL6D
-
-          R5lxlsn2ihE636YX/rsTGNAy4cDcUzn+2YYNZrK62+wAL1YoBOPb8HIW8SDt/Wj1
-
-          m7xnP6hrC15+Dkaws0FLDMGJe3awX1wbw8tLym5Ml6s/56ASaYbWun7xTEnOgeiI
-
-          5Xuu/77d+MUG0uO+z8mTMP9fjJY3p28Zm8ecvlAhAoGAbldjmaAycWDtzG9xwRn3
-
-          bZwsJ9PCPmIOy3LWzMzGMjOeX1OHVWZL7NOYiDykhP0klXysV+wi/bF4RU34AH+C
-
-          abVJuoqBI4K9WG87oThkQ1769e1hZ9GMuwatJn+/N8ZROP9TrmT+JxWnbtK2zZpM
-
-          u9Pxxu0CMHqxssljPhjAQxM=
+        client_email: 
+        client_id: 
+        client_x509_cert_url: 
+        private_key: -- BEGIN PRIVATE KEY
 
           -----END PRIVATE KEY-----
 
           '
-        private_key_id: 5e4f0fb5c21ba0e7b0d4686d018237382b04cb5d
+        private_key_id: 
         project_id: zoomcamp-taxi
         token_uri: https://oauth2.googleapis.com/token
         type: service_account
