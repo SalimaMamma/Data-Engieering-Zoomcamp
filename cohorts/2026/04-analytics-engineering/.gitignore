@@ -1,13 +1,12 @@
+# dbt profiles
+profiles.yml
 
-*.parquet
-
-
+# Keys & sensitive files
 gcp-key.json
 *.json
 !package.json
 
-
-
+# Python cache / environment
 __pycache__/
 *.pyc
 *.pyo
@@ -15,16 +14,13 @@ __pycache__/
 .venv/
 venv/
 
-# OS
+# OS files
 .DS_Store
 Thumbs.db
 
-
-#file
-#*.csv
+# Data files
+*.parquet
 *.csv.gz
 data/
-
 cohorts/2026/04-analytics-engineering/data/
 cohorts/2026/04-analytics-engineering/gcp-key.json
-*.csv.gz
