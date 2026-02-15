@@ -1,0 +1,20 @@
+
+*.parquet
+
+
+gcp-key.json
+*.json
+!package.json
+
+
+
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+.venv/
+venv/
+
+# OS
+.DS_Store
+Thumbs.db
