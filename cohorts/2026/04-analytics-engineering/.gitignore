@@ -21,7 +21,7 @@ Thumbs.db
 
 
 #file
-*.csv
+#*.csv
 *.csv.gz
 data/
 

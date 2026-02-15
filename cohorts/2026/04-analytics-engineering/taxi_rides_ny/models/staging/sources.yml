@@ -3,7 +3,7 @@ sources:
     description: Raw taxi trip data from NYC TLC
     database: |
       {%- if target.type == 'bigquery' -%}
-        {{ env_var('GCP_PROJECT_ID', 'please-add-your-gcp-project-id-here') }}
+        {{ env_var('GCP_PROJECT_ID', 'zoomcamp-taxi') }}
       {%- else -%}
         taxi_rides_ny
       {%- endif -%}
@@ -13,13 +13,10 @@ sources:
       {%- else -%}
         prod
       {%- endif -%}
-    freshness:
-      warn_after: {count: 24, period: hour}
-      error_after: {count: 48, period: hour}
+    
     tables:
       - name: green_tripdata
         description: Raw green taxi trip records
-        loaded_at_field: lpep_pickup_datetime
         columns:
           - name: vendorid
             description: "Taxi technology provider (1 = Creative Mobile Technologies, 2 = VeriFone Inc.) - Note: Raw data may contain nulls, filtered in staging"
@@ -62,7 +59,6 @@ sources:
 
       - name: yellow_tripdata
         description: Raw yellow taxi trip records
-        loaded_at_field: tpep_pickup_datetime
         columns:
           - name: vendorid
             description: "Taxi technology provider (1 = Creative Mobile Technologies, 2 = VeriFone Inc.) - Note: Raw data may contain nulls, filtered in staging"
@@ -98,3 +94,32 @@ sources:
             description: Improvement surcharge
           - name: total_amount
             description: Total amount charged
+
+  - name: raw_fhv
+    description: Raw For-Hire Vehicle trip data from NYC TLC
+    database: |
+      {%- if target.type == 'bigquery' -%}
+        {{ env_var('GCP_PROJECT_ID', 'zoomcamp-taxi') }}
+      {%- else -%}
+        taxi_rides_ny
+      {%- endif -%}
+    schema: fhv
+    
+    tables:
+      - name: raw_fhv_tripdata_2019
+        description: Raw FHV trip records for 2019
+        columns:
+          - name: dispatching_base_num
+            description: TLC Base License Number of the dispatching base
+          - name: pickup_datetime
+            description: Date and time of the pickup
+          - name: dropoff_datetime
+            description: Date and time of the dropoff
+          - name: pulocationid
+            description: TLC Taxi Zone where the pickup occurred
+          - name: dolocationid
+            description: TLC Taxi Zone where the dropoff occurred
+          - name: sr_flag
+            description: Shared ride flag (indicates if trip was shared)
+          - name: affiliated_base_number
+            description: Base number affiliated with the trip
